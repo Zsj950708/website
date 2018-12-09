@@ -34,9 +34,11 @@ str(bioassay)
 ```{r}
 ## EDA plot
 ggplot(data=bioassay,mapping = aes(y = uterus,x = lab,color=ZM))+
-  geom_boxplot()+theme_bw()+facet_wrap(~ protocol)
+  geom_boxplot()+theme_bw()+facet_wrap(~ protocol) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ggplot(data=bioassay,mapping = aes(y = uterus,x = lab,color=EE))+
-  geom_boxplot()+theme_bw()+facet_wrap(~ protocol)
+  geom_boxplot()+theme_bw()+facet_wrap(~ protocol) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
 ## Model Part I
