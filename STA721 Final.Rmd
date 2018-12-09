@@ -36,7 +36,6 @@ str(bioassay)
 ggplot
 ```
 
-
 ## Model Part I
 
 ## Model Part II
