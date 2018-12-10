@@ -43,7 +43,16 @@ ggplot(data=bioassay,mapping = aes(y = uterus,x = lab,color=EE))+
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
   labs(x = "Lab", y="Uterus weight (mg)", title="The side-by-side boxplot of uterus weight for different labs and 
        different dose of estrogen agonist(EE), facet by protocol", caption="", colour="EE(mg/kg/day)")
+
+
+ggplot(data=bioassay,mapping = aes(y = uterus,x = weight, color=EE))+
+  geom_()+theme_bw()+facet_wrap(~ protocol) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+  labs(x = "Lab", y="Uterus weight (mg)", title="The side-by-side boxplot of uterus weight for different labs and 
+       different dose of estrogen agonist(EE), facet by protocol", caption="", colour="EE(mg/kg/day)")
 ```
+
+
 
 ## Model Part I
 
